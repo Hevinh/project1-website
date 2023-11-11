@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Login Page</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
     <div class="login-container">
         <img class="logo" src="logo.png" alt="Logo"> <!-- Replace 'logo.png' with your logo image file -->
-        <form action="contact.html" method="post" onSubmit="return validateLogin()">
+        <form action="contact.html" method="post" onsubmit="return validateLogin()">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
@@ -20,21 +22,7 @@
         </form>
     </div>
 
-    <script>
-        function validateLogin() {
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-
-            if (username === 'admin@123' && password === 'admin123')
-            {
-                return true; // Allow the form submission
-            } else 
-            {
-                alert('Invalid username or password');
-                return false; // Prevent the form submission
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
