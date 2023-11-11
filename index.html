@@ -9,7 +9,7 @@
 <body>
     <div class="login-container">
         <img class="logo" src="logo.png" alt="Logo"> <!-- Replace 'logo.png' with your logo image file -->
-        <form action="contact.html" method="post" onsubmit="return validateLogin()">
+        <form action="contact.html" method="post" onSubmit="return validateLogin()">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
@@ -25,9 +25,11 @@
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
 
-            if (username === 'admin@123' && password === 'admin123')(window.location.assign("contact.html") {
+            if (username === 'admin@123' && password === 'admin123')
+            {
                 return true; // Allow the form submission
-            } else {
+            } else 
+            {
                 alert('Invalid username or password');
                 return false; // Prevent the form submission
             }
